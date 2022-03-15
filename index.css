@@ -50,6 +50,11 @@ body {
 }
 
 .centerdiv {
+  padding-top: 3vmin;
+  padding-right: 3vmin;
+  padding-left: 3vmin;
+  box-shadow: 2px 2px 10px grey, -2px -2px 10px grey;
+  border-radius: 2%;
   position: fixed;
   top: 50%;
   left: 50%;
