@@ -42,6 +42,7 @@ body {
   list-style-type: none;
   justify-content: center;
   display: flex;
+  transition: 300ms ease-in-out;
   li {
     float: left;
   }
@@ -56,6 +57,7 @@ body {
   a:hover {
     background-color: #ddd;
     color: $black;
+    transform: translateY(-5%) translateX(-5%);
   }
   img {
     max-width: 40px;
