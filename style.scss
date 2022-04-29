@@ -20,6 +20,9 @@ $fsize: 24px;
   transform: translate(-50%, -50%);
 }
 
+.centerdiv {
+  @include center;
+}
 .name {
   position: relative;
   font-size: 300%;
@@ -63,8 +66,4 @@ body {
     max-width: 40px;
     max-height: auto;
   }
-}
-
-.centerdiv {
-  @include center;
 }
