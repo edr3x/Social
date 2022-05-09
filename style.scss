@@ -6,13 +6,12 @@
 
 $black: #000000;
 $shadow: rgb(204, 204, 204);
-$fsize: 25px;
 
 @mixin center {
   padding-top: 3vmin;
   padding-right: 3vmin;
   padding-left: 3vmin;
-  box-shadow: 2px 2px 10px $shadow, -2px -2px 10px $shadow;
+  box-shadow: 4px 4px 12px $shadow;
   border-radius: 2%;
   position: fixed;
   top: 50%;
@@ -32,12 +31,36 @@ $fsize: 25px;
   text-align: center;
 }
 
-body {
-  background-color: azure;
+@mixin headtitle {
+  position: relative;
+  font-size: 200%;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
 }
 
-.div {
-  font-size: $fsize;
+.heading {
+  padding-top: 3%;
+  @include headtitle;
+}
+
+.heading2 {
+  padding-top: 15%;
+  @include headtitle;
+}
+
+.desc {
+  position: relative;
+  font-size: 140%;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 200;
+  font-style: normal;
+  text-align: center;
+}
+
+body {
+  background-color: azure;
 }
 
 .nav {
@@ -55,7 +78,6 @@ body {
     text-align: center;
     padding: 12px 12px;
     text-decoration: none;
-    font-size: $fsize;
   }
   a:hover {
     background-color: #ddd;
