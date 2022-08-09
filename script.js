@@ -1,5 +1,5 @@
 function textCopy() {
-  const add = ["dhunganaannanta", "gmail.com"].join("@");
+  const add = ["r3x", "duck.com"].join("@");
   navigator.clipboard.writeText(add);
-  alert("Copied mail address to clipboard");
+  alert("Copied e-mail address to clipboard");
 }
