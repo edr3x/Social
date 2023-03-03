@@ -6,6 +6,7 @@
 
 $black: #000000;
 $shadow: rgb(201, 201, 201);
+$primary-font: "Fira Code", monospace;
 
 @mixin center {
   padding-top: 3vmin;
@@ -22,10 +23,11 @@ $shadow: rgb(201, 201, 201);
 .centerdiv {
   @include center;
 }
+
 .name {
   position: relative;
   font-size: 300%;
-  font-family: "Courier New", Courier, monospace;
+  font-family: $primary-font;
   font-weight: bold;
   font-style: normal;
   text-align: center;
@@ -34,7 +36,7 @@ $shadow: rgb(201, 201, 201);
 @mixin headtitle {
   position: relative;
   font-size: 200%;
-  font-family: "Courier New", Courier, monospace;
+  font-family: $primary-font;
   font-weight: bold;
   font-style: normal;
   text-align: center;
@@ -53,7 +55,7 @@ $shadow: rgb(201, 201, 201);
 .desc {
   position: relative;
   font-size: 140%;
-  font-family: "Courier New", Courier, monospace;
+  font-family: $primary-font;
   font-weight: 200;
   font-style: normal;
   text-align: center;
