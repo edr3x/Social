@@ -48,7 +48,7 @@ $primary-font: "Fira Code", monospace;
 }
 
 .heading2 {
-  padding-top: 15%;
+  padding-top: 5%;
   @include headtitle;
 }
 
@@ -89,5 +89,17 @@ body {
   img {
     max-width: 40px;
     max-height: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .centerdiv {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .centerdiv {
+    width: 20%;
   }
 }
