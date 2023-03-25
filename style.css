@@ -71,13 +71,9 @@ body {
   max-height: auto;
 }
 
-@media screen and (max-width: 500px) {
-  .centerdiv {
-    width: 70%;
-  }
-
+@media screen and (max-width: 750px) {
   .name {
-    font-size: 200%;
+    font-size: 230%;
   }
 
   .desc {
@@ -85,8 +81,26 @@ body {
   }
 }
 
-@media screen and (max-width: 200px) {
-  .centerdiv {
-    width: 20%;
+@media screen and (max-width: 500px) {
+  .name {
+    font-size: 170%;
+  }
+
+  .desc {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 210px) {
+  .name {
+    font-size: 120%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .desc {
+    font-size: 70%;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
