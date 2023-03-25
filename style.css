@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: azure;
+}
+
 .centerdiv {
   padding-top: 3vmin;
   padding-right: 3vmin;
@@ -14,6 +19,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .name {
   position: relative;
   font-size: 300%;
@@ -22,47 +28,30 @@
   font-style: normal;
   text-align: center;
 }
-.heading {
-  padding-top: 3%;
-  position: relative;
-  font-size: 200%;
-  font-family: "Fira Code", monospace;
-  font-weight: bold;
-  font-style: normal;
-  text-align: center;
-}
-.heading2 {
-  padding-top: 5%;
-  position: relative;
-  font-size: 200%;
-  font-family: "Fira Code", monospace;
-  font-weight: bold;
-  font-style: normal;
-  text-align: center;
-}
+
 .desc {
   position: relative;
-  font-size: 140%;
+  font-size: 150%;
   font-family: "Fira Code", monospace;
   font-weight: 200;
   font-style: normal;
   text-align: center;
 }
 
-body {
-  background-color: azure;
-}
-
 .nav {
+  display: flex;
   overflow: hidden;
   list-style-type: none;
   justify-content: center;
-  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   transition: 300ms ease-in-out;
 }
+
 .nav li {
-  float: left;
+  float: center;
 }
+
 .nav a {
   float: left;
   color: #000000;
@@ -70,11 +59,13 @@ body {
   padding: 12px 12px;
   text-decoration: none;
 }
+
 .nav a:hover {
   background-color: #ddd;
   color: #000000;
   transform: translateY(-5%) translateX(-5%);
 }
+
 .nav img {
   max-width: 40px;
   max-height: auto;
@@ -84,7 +75,16 @@ body {
   .centerdiv {
     width: 70%;
   }
+
+  .name {
+    font-size: 200%;
+  }
+
+  .desc {
+    font-size: 120%;
+  }
 }
+
 @media screen and (max-width: 200px) {
   .centerdiv {
     width: 20%;
