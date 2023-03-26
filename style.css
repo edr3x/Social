@@ -71,6 +71,11 @@ body {
 }
 
 @media screen and (max-width: 750px) {
+  .centerdiv {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
   .name {
     font-size: 230%;
   }
@@ -78,9 +83,18 @@ body {
   .desc {
     font-size: 120%;
   }
+  .nav img {
+    max-width: 30px;
+    max-height: auto;
+  }
 }
 
 @media screen and (max-width: 500px) {
+  .centerdiv {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
   .name {
     font-size: 170%;
   }
@@ -88,9 +102,18 @@ body {
   .desc {
     font-size: 100%;
   }
+  .nav img {
+    max-width: 30px;
+    max-height: auto;
+  }
 }
 
 @media screen and (max-width: 210px) {
+  .centerdiv {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
   .name {
     font-size: 120%;
     display: flex;
@@ -101,5 +124,9 @@ body {
     font-size: 70%;
     display: flex;
     flex-wrap: wrap;
+  }
+  .nav img {
+    max-width: 20px;
+    max-height: auto;
   }
 }
