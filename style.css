@@ -5,7 +5,8 @@
 }
 
 body {
-  background-color: azure;
+  background-color: #35363a;
+  color: #e4e4e4;
   font-family: "Fira Code", monospace;
 }
 
@@ -13,8 +14,9 @@ body {
   padding-top: 3vmin;
   padding-right: 3vmin;
   padding-left: 3vmin;
-  box-shadow: 4px 4px 12px rgb(201, 201, 201);
-  border-radius: 2%;
+  width: 50%;
+  /* box-shadow: 4px 4px 12px rgb(201, 201, 201); */
+  /* border-radius: 2%; */
   position: fixed;
   top: 50%;
   left: 50%;
@@ -48,34 +50,39 @@ body {
 }
 
 .nav li {
+  border-radius: 5%;
   float: center;
 }
 
 .nav a {
   float: left;
   color: #000000;
+  border-radius: 5%;
   text-align: center;
   padding: 12px 12px;
   text-decoration: none;
 }
 
 .nav a:hover {
-  background-color: #ddd;
+  background-color: #444444;
+  border-radius: 5%;
   color: #000000;
-  transform: translateY(-5%) translateX(-5%);
+  transform: translateY(-3%) translateX(-3%);
 }
 
 .nav img {
   max-width: 40px;
+  border-radius: 5%;
   max-height: auto;
 }
 
 @media screen and (max-width: 750px) {
   .centerdiv {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 0vmin;
+    padding-right: 0vmin;
+    padding-left: 0vmin;
+    width: 90%;
   }
-
   .name {
     font-size: 230%;
   }
@@ -90,11 +97,6 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-  .centerdiv {
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-
   .name {
     font-size: 170%;
   }
@@ -110,8 +112,7 @@ body {
 
 @media screen and (max-width: 210px) {
   .centerdiv {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    width: 100%;
   }
 
   .name {
