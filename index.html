@@ -1,72 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="shortcut icon" href="assets/rust.png" type="image/x-icon" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
-      rel="stylesheet"
-    />
+    <title>Anuj Dhungana - Backend & DevOps Engineer</title>
     <link rel="stylesheet" href="style.css" id="styles" />
-    <title>Hello There!</title>
-  </head>
-  <body>
-    <main class="centerdiv">
-      <h1 class="name">Hi! I'm Anuj Dhungana</h1>
-      <br />
-      <br />
-      <p class="desc">
-        I design and build scalable backend systems, specializing in microservices architecture and Kubernetes-powered infrastructure.
-        Whether it's APIs, internal tools, or multi-tenant platforms, I focus on writing clean, efficient, and reliable code that keeps everything running smoothly.
-      </p>
-      <br />
-      <br />
-      <ul class="nav">
-        <li>
-          <a
-            href="https://www.linkedin.com/in/anujdhungana/"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img src="assets/linkedin.png" alt="linkedin"
-          /></a>
-        </li>
-        <li>
-          <a
-            href="https://discord.com/users/527842204396552202"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img src="assets/discord.png" alt="discord"
-          /></a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/edr3x"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img src="assets/github.png" alt="github"
-          /></a>
-        </li>
-        <li>
-          <a
-            href="https://twitter.com/edr3x_"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img src="assets/twitter.png" alt="twitter"
-          /></a>
-        </li>
-        <li>
-          <a><img src="assets/gmail.png" alt="email" onclick="textCopy()" /></a>
-        </li>
-        <li>
-            <a href="assets/Anuj-Dhungana-cv.pdf" target="_blank" rel="noopener noreferrer" download><img src="assets/cv.png" alt="CV"></a>
-        </li>
-      </ul>
-      <br />
-    </main>
-  </body>
+</head>
+<body>
+
+<div class="grid-bg"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo">anuj<span>.dev</span></div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#tech">Tech Stack</a></li>
+    <li><a href="#highlights">Work</a></li>
+    <li><a href="#talks">Talks</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="burger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-label">Backend Engineer · DevOps</div>
+    <h1>I build <span class="accent">scalable systems</span><br>that power the backend.</h1>
+    <p class="hero-desc">Experienced engineer specializing in distributed microservices, Kubernetes orchestration, and cloud-native infrastructure. Passionate about automation, high-performance applications, and efficient resource utilization.</p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-primary">Get In Touch</a>
+      <a href="#highlights" class="btn btn-ghost">View My Work</a>
+    </div>
+
+    <div class="terminal-float">
+      <div class="terminal">
+        <div class="terminal-bar">
+          <div class="terminal-dot r"></div>
+          <div class="terminal-dot y"></div>
+          <div class="terminal-dot g"></div>
+          <span class="terminal-title">anuj@k8s-cluster ~</span>
+        </div>
+        <div class="terminal-body" id="termBody"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner reveal">
+    <div class="section-label">Who I Am</div>
+    <h2 class="section-title"><span class="num">01.</span>About Me</h2>
+    <div class="about-grid">
+      <div>
+        <div class="about-text">
+          <p>I'm Anuj Dhungana, a backend and DevOps engineer based in Kathmandu, Nepal. With 3+ years of professional experience, I design and optimize scalable backend systems with a focus on performance and security.</p>
+          <p>My expertise spans building microservice architectures using Go and RUST, orchestrating containerized workloads on Kubernetes, and implementing robust CI/CD pipelines. I thrive on solving complex infrastructure challenges, from mult-tenant B2B applications to on-the-fly image processing pipelines.</p>
+          <p>When I'm not shipping code, I'm giving technical talks about all things tech and programming to help share knowledge with the engineering community.</p>
+        </div>
+      </div>
+      <div>
+        <div class="about-stats">
+          <div class="stat-card"><div class="stat-num">3+</div><div class="stat-label">Years of Experience</div></div>
+          <div class="stat-card"><div class="stat-num">5</div><div class="stat-label">Tech Talks Delivered</div></div>
+          <div class="stat-card"><div class="stat-num">20+</div><div class="stat-label">Technologies Mastered</div></div>
+          <div class="stat-card"><div class="stat-num">3</div><div class="stat-label">Companies Worked At</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" style="background:var(--bg2)">
+  <div class="section-inner reveal">
+    <div class="section-label">Career Path</div>
+    <h2 class="section-title"><span class="num">02.</span>Experience</h2>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="tl-header">
+          <span class="tl-role">Software Engineer</span>
+          <span class="tl-company">@ One Accord</span>
+          <span class="tl-date">Jul 2025 — Present</span>
+        </div>
+        <ul class="tl-details">
+          <li>Led migration of inter-service communication between microservices from HTTP to gRPC and NATS JetStream.</li>
+          <li>Working on backend systems and infrastructure focusing on performance, reliability, and scalable architecture.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-header">
+          <span class="tl-role">Software Engineer (L2)</span>
+          <span class="tl-company">@ Webpoint Solutions</span>
+          <span class="tl-date">Jan 2025 — Jul 2025</span>
+        </div>
+        <ul class="tl-details">
+          <li>Developed and maintained microservice applications using HTTP and gRPC with monitoring, logging and scaling with Kubernetes.</li>
+          <li>Automated CI/CD pipelines with GitHub Actions and ArgoCD for seamless deployments.</li>
+          <li>Worked with Infrastructure as Code (IaC) using Terraform to deploy and manage cloud infrastructure across development stages.</li>
+          <li>Implemented domain name provisioning as in-app feature, providing SSL certificates to custom user pages per client.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-header">
+          <span class="tl-role">Software Engineer (L1)</span>
+          <span class="tl-company">@ Webpoint Solutions</span>
+          <span class="tl-date">Jun 2024 — Jan 2025</span>
+        </div>
+        <ul class="tl-details">
+          <li>Utilized Helm for managing Kubernetes definitions and deploying services from Artifact Hub.</li>
+          <li>Implemented on-the-fly image processor (compression, transformation, optimization) on multiple product websites.</li>
+          <li>Built Slack API integration for crash, panic, and internal server error notifications from infrastructure.</li>
+          <li>Implemented exponential retry wrapper around HTTP/gRPC calls for fault-tolerant communication.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-header">
+          <span class="tl-role">Associate Software Engineer</span>
+          <span class="tl-company">@ Webpoint Solutions</span>
+          <span class="tl-date">Aug 2023 — May 2024</span>
+        </div>
+        <ul class="tl-details">
+          <li>Implemented caching strategies (Cache-Aside and Write-Through) to increase application performance.</li>
+          <li>Contributed to B2B application development with multi-tenant architectures and secure API integrations.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-header">
+          <span class="tl-role">Back End Developer</span>
+          <span class="tl-company">@ InternSathi</span>
+          <span class="tl-date">Jan 2023 — Jul 2023</span>
+        </div>
+        <ul class="tl-details">
+          <li>Created and integrated features for the company's online application with senior engineers.</li>
+          <li>Gained knowledge in Agile development approaches and team collaboration.</li>
+          <li>Investigated and debugged code to find and resolve problems.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TECH STACK -->
+<section id="tech">
+  <div class="section-inner reveal">
+    <div class="section-label">Tools & Technologies</div>
+    <h2 class="section-title"><span class="num">03.</span>Tech Stack</h2>
+    <div class="tech-categories">
+
+      <div class="tech-cat">
+        <div class="tech-cat-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          Languages & Runtimes
+        </div>
+        <div class="tech-tags">
+          <span class="tech-tag">Go</span>
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">Rust</span>
+          <span class="tech-tag">Flutter</span>
+        </div>
+      </div>
+
+      <div class="tech-cat">
+        <div class="tech-cat-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          Data & Messaging
+        </div>
+        <div class="tech-tags">
+          <span class="tech-tag">PostgreSQL</span>
+          <span class="tech-tag">Redis</span>
+          <span class="tech-tag">Kafka</span>
+          <span class="tech-tag">RabbitMQ</span>
+          <span class="tech-tag">NATS</span>
+          <span class="tech-tag">gRPC</span>
+        </div>
+      </div>
+
+      <div class="tech-cat">
+        <div class="tech-cat-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          Infrastructure & DevOps
+        </div>
+        <div class="tech-tags">
+          <span class="tech-tag">Docker</span>
+          <span class="tech-tag">Kubernetes</span>
+          <span class="tech-tag">EKS</span>
+          <span class="tech-tag">K3S</span>
+          <span class="tech-tag">Helm</span>
+          <span class="tech-tag">Terraform</span>
+          <span class="tech-tag">ArgoCD</span>
+          <span class="tech-tag">AWS</span>
+          <span class="tech-tag">CloudNativePG</span>
+          <span class="tech-tag">Traefik</span>
+        </div>
+      </div>
+
+      <div class="tech-cat">
+        <div class="tech-cat-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+          Monitoring & Observability
+        </div>
+        <div class="tech-tags">
+          <span class="tech-tag">Prometheus</span>
+          <span class="tech-tag">Grafana</span>
+          <span class="tech-tag">Loki</span>
+          <span class="tech-tag">Promtail</span>
+          <span class="tech-tag">OpenTelemetry</span>
+        </div>
+      </div>
+
+      <div class="tech-cat">
+        <div class="tech-cat-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m-7-10h6m6 0h6"/></svg>
+          CI/CD & Tooling
+        </div>
+        <div class="tech-tags">
+          <span class="tech-tag">GitHub Actions</span>
+          <span class="tech-tag">ArgoCD</span>
+          <span class="tech-tag">Linux</span>
+          <span class="tech-tag">Cloudflare</span>
+          <span class="tech-tag">Slack API</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HIGHLIGHTS -->
+<section id="highlights" style="background:var(--bg2)">
+  <div class="section-inner reveal">
+    <div class="section-label">What I've Built</div>
+    <h2 class="section-title"><span class="num">04.</span>Engineering Highlights</h2>
+    <div class="highlights-grid">
+
+      <div class="highlight-card">
+        <div class="highlight-icon">⚡</div>
+        <h3>Microservice Architecture</h3>
+        <p>Designed and maintained microservices communicating over HTTP and gRPC, with Kubernetes-based scaling, monitoring, and centralized logging.</p>
+      </div>
+
+      <div class="highlight-card">
+        <div class="highlight-icon">🔄</div>
+        <h3>CI/CD & GitOps</h3>
+        <p>Automated deployment pipelines with GitHub Actions and ArgoCD. Managed infrastructure as code with Terraform across multiple development stages.</p>
+      </div>
+
+      <div class="highlight-card">
+        <div class="highlight-icon">🌐</div>
+        <h3>Domain & SSL Provisioning</h3>
+        <p>Built in-app domain name provisioning with automated SSL certificate generation for custom user pages, serving multi-tenant B2B clients.</p>
+      </div>
+
+      <div class="highlight-card">
+        <div class="highlight-icon">🖼️</div>
+        <h3>On-The-Fly Image Processing</h3>
+        <p>Implemented a real-time image processor handling compression, transformation, and optimization across multiple product websites.</p>
+      </div>
+
+      <div class="highlight-card">
+        <div class="highlight-icon">🔔</div>
+        <h3>Slack Infrastructure Alerts</h3>
+        <p>Integrated Slack API to push real-time notifications for application crashes, panics, and internal server errors from production infrastructure.</p>
+      </div>
+
+      <div class="highlight-card">
+        <div class="highlight-icon">🧠</div>
+        <h3>Caching & Resilience</h3>
+        <p>Implemented Cache-Aside and Write-Through strategies for performance. Built exponential retry wrappers around HTTP/gRPC for fault tolerance.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TALKS -->
+<section id="talks">
+  <div class="section-inner reveal">
+    <div class="section-label">Knowledge Sharing</div>
+    <h2 class="section-title"><span class="num">05.</span>Technical Talks</h2>
+    <div class="talks-list">
+      <div class="talk-item">
+        <span class="talk-num">01</span>
+        <span class="talk-title">Introduction to Rust and why the hype around it?</span>
+      </div>
+      <div class="talk-item">
+        <span class="talk-num">02</span>
+        <span class="talk-title">How your IDE autocompletes and shows errors about the code you are writing (LSP)</span>
+      </div>
+      <div class="talk-item">
+        <span class="talk-num">03</span>
+        <span class="talk-title">Self-host your application on any cloud platform with Docker</span>
+      </div>
+      <div class="talk-item">
+        <span class="talk-num">04</span>
+        <span class="talk-title">Monitoring production applications with Grafana, Loki & Prometheus</span>
+      </div>
+      <div class="talk-item">
+        <span class="talk-num">05</span>
+        <span class="talk-title">Distributed tracing implimentation with open-telemetry & why is it necessary?</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="section-inner reveal">
+    <div class="section-label">Get In Touch</div>
+    <h2 class="section-title"><span class="num">06.</span>Contact</h2>
+    <div class="contact-grid">
+      <div>
+        <p class="about-text">I'm always open to discussing new opportunities, interesting projects, or just talking about backend systems and DevOps. Feel free to reach out.</p>
+        <div class="contact-info">
+          <a href="mailto:dhunganaannanta@gmail.com" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            dhunganaannanta@gmail.com
+          </a>
+          <a href="tel:+9779806058565" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +977 9806058565
+          </a>
+          <a href="https://www.linkedin.com/in/anujdhungana" target="_blank" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            linkedin.com/in/anujdhungana
+          </a>
+          <a href="https://www.anujdhungana.com.np/" target="_blank" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            anujdhungana.com.np
+          </a>
+          <a href="https://github.com/edr3x" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            github.com/edr3x
+          </a>
+        </div>
+      </div>
+      <div class="contact-cta">
+        <p>Whether you need a backend engineer, DevOps specialist, or someone who can bridge both worlds — let's talk.</p>
+        <a href="mailto:dhunganaannanta@gmail.com" class="btn btn-primary">Say Hello</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Designed & Built by Anuj Dhungana &copy; 2025</p>
+</footer>
+</body>
 </html>
